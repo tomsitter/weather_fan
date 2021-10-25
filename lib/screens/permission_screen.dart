@@ -12,7 +12,9 @@ class PermissionScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Text(
-              "Location permissions are denied. Please enable location permissions for this app."),
+            "Location permissions are denied. Please enable location permissions for this app.",
+            textAlign: TextAlign.center,
+          ),
           ElevatedButton(
             onPressed: () async {
               if (await Permission.location.isDenied) {
@@ -20,7 +22,9 @@ class PermissionScreen extends StatelessWidget {
               }
               Navigator.pop(context);
             },
-            child: const Text("Grant Permission"),
+            child: const Text(
+              "Grant Permission",
+            ),
           ),
         ],
       ),

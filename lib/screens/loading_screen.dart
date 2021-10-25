@@ -7,7 +7,7 @@ import 'package:weather_fan/util/forecast.dart';
 import 'package:weather_fan/services/weather.dart';
 import 'package:weather_fan/util/styles.dart';
 
-import 'location_screen.dart';
+import 'weather_screen.dart';
 
 class LoadingScreen extends StatefulWidget {
   const LoadingScreen({Key? key}) : super(key: key);
